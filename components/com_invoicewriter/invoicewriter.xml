@@ -1,0 +1,58 @@
+<?xml version="1.0" ?>
+<mosinstall type="component">
+ <name>invoiceWriter</name>
+ <creationDate>Oktober 2010</creationDate>
+ <author>Brainworx</author>
+ <copyright>This component is released under the GNU/GPL License</copyright>
+ <authorEmail>stijn.heylen@brainworx.be</authorEmail>
+ <authorUrl>www.brainworx.be</authorUrl>
+ <!--  Version number is also specified in admin.invoicewriter.html.php  -->
+ <version>1.0.0 beta</version>
+	<description>
+		<![CDATA[ <p>
+		Brainworx.be invoicewriter
+		
+	</p>]]></description>
+
+<files>
+	<filename>invoicewriter.php</filename>
+	<filename>invoicewriter.html.php</filename>
+	<filename>LICENSE.php</filename>
+	<filename>CHANGELOG.php</filename>
+	<filename>language/english.php</filename>
+	<filename>images/cancel_f2.png</filename>
+	<filename>images/keys_f2.png</filename>  
+	<filename>images/small-car.png</filename>
+	<filename>images/users.png</filename>
+	<filename>images/invoicewriter.css</filename>  
+</files>
+
+	<!-- database section -->
+	<install>
+		<sql folder="admin">
+			<file driver="mysql" charset="utf8">install.invoicewriter.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql  folder="admin">
+			<file driver="mysql" charset="utf8">uninstall.invoicewriter.sql</file>
+		</sql>
+	</uninstall>
+
+ 
+ <installfile>install.invoicewriter.php</installfile>
+
+
+ <administration>
+    <menu act="none">Brainworx invoicewriter</menu>
+    <files folder="admin">
+		<filename>admin.invoicewriter.php</filename>
+		<filename>admin.invoicewriter.html.php</filename>
+		<filename>class.invoicewriter.php</filename>
+		<filename>toolbar.invoicewriter.php</filename>
+		<filename>toolbar.invoicewriter.html.php</filename>
+		<filename>install.invoicewriter.sql</filename>
+		<filename>uninstall.invoicewriter.sql</filename>
+		</files>
+ </administration>
+</mosinstall>

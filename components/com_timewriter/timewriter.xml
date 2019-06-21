@@ -1,0 +1,58 @@
+<?xml version="1.0" ?>
+<mosinstall type="component">
+ <name>timewriter</name>
+ <creationDate>Okt 2010</creationDate>
+ <author>BrainWorX</author>
+ <copyright>This component is released under the GNU/GPL License</copyright>
+ <authorEmail>stijn.heylen@brainworx.be</authorEmail>
+ <authorUrl>www.brainworx.be</authorUrl>
+ <!--  Version number is also specified in admin.timewriter.html.php  -->
+ <version>1.0.6 pre</version>
+	<description>
+		<![CDATA[ <p>
+		BrainWorX TimeWriter
+		
+	</p>]]></description>
+
+<files>
+	<filename>timewriter.php</filename>
+	<filename>timewriter.html.php</filename>
+	<filename>LICENSE.php</filename>
+	<filename>CHANGELOG.php</filename>
+	<filename>language/english.php</filename>
+	<filename>images/cancel_f2.png</filename>
+	<filename>images/keys_f2.png</filename>  
+	<filename>images/small-car.png</filename>
+	<filename>images/users.png</filename>
+	<filename>images/timewriter.css</filename>  
+</files>
+
+	<!-- database section -->
+	<install>
+		<sql folder="admin">
+			<file driver="mysql" charset="utf8">install.timewriter.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql  folder="admin">
+			<file driver="mysql" charset="utf8">uninstall.timewriter.sql</file>
+		</sql>
+	</uninstall>
+
+ 
+ <installfile>install.timewriter.php</installfile>
+
+
+ <administration>
+    <menu act="none">BrainWorX TimeWriter</menu>
+    <files folder="admin">
+		<filename>admin.timewriter.php</filename>
+		<filename>admin.timewriter.html.php</filename>
+		<filename>class.timewriter.php</filename>
+		<filename>toolbar.timewriter.php</filename>
+		<filename>toolbar.timewriter.html.php</filename>
+		<filename>install.timewriter.sql</filename>
+		<filename>uninstall.timewriter.sql</filename>
+		</files>
+ </administration>
+</mosinstall>

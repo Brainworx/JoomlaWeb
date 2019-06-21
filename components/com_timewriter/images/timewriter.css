@@ -1,0 +1,81 @@
+/* TimeWriter Component CSS */
+#weekend{
+background-color:lightgrey;
+}
+
+#today {
+border:1px solid;
+border-color:red;
+}
+
+#todayweekend{
+background-color:lightgrey;
+border:1px solid;
+border-color:red;
+}
+
+#warning {
+border:1px solid;
+border-color:red;
+}
+div.calendar-content {
+width:430px;
+}
+div.calendar-content td.sectiontableentry1 {
+padding: 2px;
+}
+div.calendar-content td.sectiontableheader {
+  background-color:#B5B5B5;
+}
+th.sectiontableheader {
+  height:20px;
+}
+div.calendar-background {
+  background-color:lightgrey;
+}
+div.calendar-content td.sectiontableentry2 a, td.sectiontableentry1 a {
+  padding-left: 1px;
+}
+td.calendar-billable {
+  color:darkred;
+}
+td.calendar-billable-subtotal {
+  color:darkred;
+  font-weight:normal;
+}
+td.calendar-nonbillable {
+  color:darkblue;
+}
+td.calendar-nonbillable-subtotal {
+  color:darkblue;
+  font-weight:normal;
+}
+td.calendar-subtotal {
+  color:black;
+  font-weight:normal;
+}
+.smallcar img{
+ filter:progid:DXImageTransform.Microsoft.Alpha(opacity=40);
+ -moz-opacity: 0.4;
+}
+
+table.adminform textarea.timesheetEntry {
+  height: 80px;
+  width: 400px;
+}
+table.adminform textarea.projectEdit {
+  height: 80px;
+  width: 400px;
+}
+table.adminform textarea.companyEdit {
+  height: 80px;
+  width: 400px;
+}
+table.adminform textarea.addressEdit {
+  height: 40px;
+  width: 200px;
+}
+
+input.inputbox {
+  width:120px;
+}

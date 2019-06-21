@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="template">
+	<name>green_rays</name>
+	<version>1.0.0</version>
+	<creationDate>09/2009</creationDate>
+	<author>BrainWorX</author>
+	<authorEmail>info@brainworx.be</authorEmail>
+	<authorUrl>http://www.brainworx.be</authorUrl>
+	<copyright>BrainWorX</copyright>
+	<license>free</license>
+	<description>TEMPLATE</description>
+	<files>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>params.ini</filename>
+		<filename>templates.php</filename>
+		
+		<filename>images/banner_01.jpg</filename>
+		<filename>images/banner_02.jpg</filename>
+		<filename>images/content_bottom.jpg</filename>
+		<filename>images/content_middle.jpg</filename>
+		<filename>images/content_top.jpg</filename>
+		<filename>images/h3.jpg</filename>
+		<filename>images/headerimg.jpg</filename>
+		<filename>images/indent1.png</filename>
+		<filename>images/indent2.png</filename>
+		<filename>images/indent3.png</filename>
+		<filename>images/indent4.png</filename>
+		<filename>images/index.html</filename>	
+		<filename>images/menu_li.jpg</filename>
+		<filename>images/menu_li_a.jpg</filename>
+		<filename>images/menu_row.jpg</filename>
+		<filename>images/newsflashh3.jpg</filename>
+		<filename>images/spacer.png</filename>
+		<filename>images/submenu_row.jpg</filename>
+		
+		<filename>css/index.html</filename>
+		<filename>css/template.css</filename>
+		<filename>css/editor.css</filename>
+		<filename>css/ie6.css</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.tpl_green_rays.ini</language>
+	</languages>
+	<administration>
+	    <languages folder="admin">
+			<language tag="en-GB">en-GB.tpl_green_rays.ini</language>
+		</languages>
+    </administration>
+	
+	<positions>
+		<position>user3</position>
+		<position>left</position>
+		<position>right</position>
+		<position>top</position>
+		<position>debug</position>		
+	</positions>
+	
+</install>
