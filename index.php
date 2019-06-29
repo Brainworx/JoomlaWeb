@@ -1,5 +1,5 @@
 <?php 
-echo('Created by Brainworx.');
+//echo('Created by Brainworx.');
 if(!function_exists("__ics")){ob_start();?>$1 and <a href='http://installatron.com/apps/joomla' target='_blank' title='Installatron enables webmasters to instantly install and upgrade Joomla and other web applications.'><?php
 switch (mt_rand(0,2))
 {
@@ -31,6 +31,10 @@ require_once ( JPATH_BASE .DS.'includes'.DS.'defines.php' );
 require_once ( JPATH_BASE .DS.'includes'.DS.'framework.php' );
 
 JDEBUG ? $_PROFILER->mark( 'afterLoad' ) : null;
+
+$task = JRequest::getCmd('task');
+if($task == 'editExpense')
+	echo $task;
 
 /**
  * CREATE THE APPLICATION
@@ -75,6 +79,7 @@ $mainframe->triggerEvent('onAfterRoute');
  */
 $option = JRequest::getCmd('option');
 $mainframe->dispatch($option);
+
 
 // trigger the onAfterDispatch events
 JDEBUG ? $_PROFILER->mark('afterDispatch') : null;
